@@ -1,0 +1,541 @@
+@media(max-width:450px){
+
+    body{
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+    }
+
+    header{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+        background-color: white;
+        
+    }
+
+    header .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .menu-btn{
+        width: 25px;
+        height: 30px;
+        background-image: url(./image/menu.png);
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+        border: none;
+    }
+
+    header > div{
+        color: black;
+        gap: 10px;
+        z-index: 10;
+    }
+
+    header nav{
+        width: 70%;
+        height: calc(100vh - 60px);
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 30px;
+        position: absolute;
+        top: 70px;
+        left: -300px;
+        background-color: green;
+        color:rgb(195, 247, 203);;
+        font-size: 25px;
+        z-index: 100;
+        
+    }
+
+    header nav a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(170, 165, 165);
+        gap: 20px;
+        font-size: 20px;
+    }
+
+    header nav img{
+        color: white;
+    }
+
+    header nav div{
+         width: 100%;
+        padding: 0px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 18x;
+        
+    }
+
+     nav > div{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap:10px;
+        border-radius: 5px;
+    }
+
+    nav > div > span{
+        width: 34px;
+        height: 17px;
+        border-radius: 17px;
+        background-color: white;
+        position: relative;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    nav > div > span > small{
+        width: 17px;
+        height: 17px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        top:0;
+        left:0;
+    }
+
+    .theme{
+        display: flex;
+        justify-content: flex-start;
+        color: rgb(195, 247, 203);
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .menu-btn{
+            width: 40px;
+            height: 40px;
+            background-image: url("./images/menu_btn.png");
+            background-size: cover;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+    }
+
+    main{
+        width: 100%;
+        height: calc(100vh - 120px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+       
+    }
+    .part1{
+        width: 100%;
+        height: 180px;
+        background-image: url(./image/banner.jpg);
+        object-fit: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 40px;
+        color: white;
+    }
+
+    .part1 b{
+        font-size: 25px;
+        font-weight: 200;
+       margin-bottom: 11px;
+       /* padding-top: 20px; */
+    }
+
+    .part1 small{
+        font-style: italic;
+        padding-left: 65px;
+        font-size: 11px;
+        margin-bottom: 40px;
+    }
+
+    .form-btn{
+        width: 30px;
+        height: 40px;
+        display: flex;
+        background-image: url(./image/plus.png);
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        background-size: contain;
+        position: absolute;
+        width: 40px;
+        right: 40px;
+        top: 110px;
+        cursor: pointer;
+        border: none;
+
+        
+    }
+
+    .main-posts{
+    width: 100%;
+    height: calc(100% - 180px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap:50px;
+    padding: 0px 20px 0 20px;
+    background-color: white;
+
+    
+}
+
+.main-posts h2{
+  height: 30px;
+  padding-top: 30px;
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.posts-container{
+    width: 100%;
+    min-height: calc(100% - 110px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;  
+    overflow-y: auto;  
+    padding: 10px;
+    gap:40px;
+    
+
+}
+
+.post-can{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    gap:10px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.post-image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post-can p{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:10px;
+}
+
+.post-can p b{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 500;
+   
+}
+.post-can p > span{
+    width: 100%;
+    text-align: justify;
+}
+
+.post-can p button{
+    width: fit-content;
+    background-color: transparent;
+    color:green;
+    font-weight: 400;
+    font-size: 15px;
+    font-style: italic;
+    border: none;
+    cursor: pointer;
+}
+
+.username-date{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.username-date .date{
+    color:darkorange;
+}
+
+.username-date {
+    color:black;
+    font-weight: bold;
+}
+
+.username{
+    color:black;
+    font-weight: bold;
+}
+
+
+.social{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.social span{
+    display: flex;
+    width: fit-content;
+    height: 20px;
+    gap:10px;
+    align-items: center;
+    justify-content: flex-start;
+  
+    
+}
+
+.social span img{
+    width: 12px;
+}
+.social span small{
+    font-size: 10px;
+}
+
+    .form{
+        width: 94%;
+        height:100%;
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 25px;
+        position: absolute;
+        top: 5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding: 20px 40px ;
+        padding-bottom: 40px;
+        background-color: white;
+        border-radius: 20px;
+   }
+
+  
+
+   .form input{
+    padding: 8px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+   }
+
+   .form input:hover{
+    color: red;
+    border: 1px solid red;
+   }
+
+   .form input:focus{
+    color: green;
+    border: 1px solid green;
+   }
+
+ .post-body{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    padding-bottom: 30px;
+
+   }
+
+    .file{
+        display: none;
+    }
+
+    .form span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 100%  
+    }
+
+    #file{
+        display: none;
+    }
+
+    .form img{
+        display: flex;
+        align-self: center;
+    }
+
+    .post-btn{
+        display: flex;
+        align-self: flex-end;
+        border: none;
+        font-size: 30px;
+        color: green;
+        background-color: transparent;
+        font-weight: 400;
+    }
+
+    .form span label{
+        width: 50%;
+        padding: 7px 0px;
+        background-color: green;
+        color:white;
+        font-size: 17px;
+        text-align: center;
+        border-radius: 10px;
+        transition: 0.5s;
+    }
+
+        .post-image-box span label:hover{
+            background-color: darkorange;
+        }
+                
+    .form .form-close{
+        width: 25px;
+        border: 1px solid green;
+        color: white;
+        border-radius: 50px;
+        align-self: flex-end;
+        padding: 2px;
+    }
+
+    .us{
+        background-image: url(banner.jpg);
+        background-size: contain;
+        background-position: center;
+        color: white;
+        font-size: 24px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer{
+        width: 100%;
+        height: 80px;
+    }
+
+    .f1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        background-color: whitesmoke;
+        gap: 30px;
+        padding-bottom: 20px;
+    }
+
+    .f1 img:hover{
+        transform: scale(1.3);
+    }
+
+    .f1 img{
+        width: 20px;
+    }
+
+    .f2{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: green;
+        color: white;
+        font-size: 12px;
+    }
+
+
+    /* utility */
+
+    .show-nav{
+        left: 0;
+    }
+
+    button.change-bg{
+    background-image: url("./image/close.png");
+    transform: rotate(360deg);
+    
+}
+
+small.slide-theme-ball{
+    left:17px;
+}
+
+
+.header-dark-theme{
+    background-color: black;
+    
+}
+
+.header-div-dark-theme{
+    color: green;
+}
+
+
+.main-dark-theme{
+    background-color: rgb(7, 7, 7);
+}
+
+.white-icon{
+    filter: invert(20);
+}
+
+.navbar a.white-text{
+    color:white;
+}
+
+.main-post-dark-theme{
+    background-color: rgb(55, 54, 54);
+}
+
+.post-container-dark-theme{
+    background-color: black;
+    color: white;
+}
+.h2-dark-theme{
+    color: white;
+}
+
+.footer-dark-theme{
+    background-color: rgb(55, 54, 54);
+}
+
+.user-dark-theme{
+    color: white;
+}
+
+.post-dark-theme{
+    background-color: rgb(79, 79, 79);
+}
+
+.close-form-dark-theme{
+    border: 1px solid green;
+}
+
+}
